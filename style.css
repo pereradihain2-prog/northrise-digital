@@ -703,11 +703,10 @@ li { font-family: var(--font-body); }
 .work-card:hover { transform: translateY(-6px); box-shadow: 0 0 0 1px rgba(6,182,212,.4), 0 12px 48px rgba(6,182,212,.18); border-color: rgba(6,182,212,.4); }
 .work-card__preview {
   width: 100%;
-  height: 300px;
-  border: none;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
   display: block;
-  pointer-events: none;
-  background: #0D0D0D;
 }
 .work-card__body { padding: 24px; }
 .work-card__tag {
