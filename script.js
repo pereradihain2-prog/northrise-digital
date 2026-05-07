@@ -164,7 +164,7 @@
       <div class="chatbot-messages" id="chatbot-messages"></div>
       <div class="chatbot-quick-btns" id="chatbot-quick-btns"></div>
       <div class="chatbot-footer">
-        Don't see your question? <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.northrisedigital@gmail.com" target="_blank" rel="noopener">Email us</a> or <a href="contact.html">Book a free call</a>
+        Don't see your question? <a href="mailto:hello.northrisedigital@gmail.com" class="email-compose-link">Email us</a> or <a href="contact.html">Book a free call</a>
       </div>
     </div>
   `;
@@ -235,6 +235,21 @@
   // Keyword matching for typed input (future-proof — no input field needed for now)
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && winEl.classList.contains('open')) closeChat();
+  });
+})();
+
+/* --- Email compose link: Gmail on desktop, mailto on mobile --- */
+(function () {
+  const GMAIL_URL = 'https://mail.google.com/mail/?view=cm&fs=1&to=hello.northrisedigital@gmail.com';
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('.email-compose-link');
+    if (!link) return;
+    if (!isMobile) {
+      e.preventDefault();
+      window.open(GMAIL_URL, '_blank', 'noopener');
+    }
+    // Mobile: let the default mailto: open the Gmail app
   });
 })();
 
