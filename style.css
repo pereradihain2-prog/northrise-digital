@@ -775,8 +775,9 @@ li { font-family: var(--font-body); }
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.1);
 }
-.browser-frame {
+.demo-preview-img {
   width: 100%;
+  height: auto;
   display: block;
 }
 @media (max-width: 768px) {
