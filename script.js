@@ -79,7 +79,7 @@
     {
       triggers: ['price', 'cost', 'how much', 'pricing', '💰'],
       label: '💰 Pricing',
-      answer: 'Our Starter site is <strong>$450</strong> (1 page). Professional is <strong>$850</strong> (5 pages). First 3 clients get founding rates: <strong>$299/$599</strong>. Monthly hosting is $79/month.'
+      answer: 'We offer 3 packages — Starter, Growth, and Premium — all custom-quoted after a free audit. No big agency prices, no pressure. We tailor every quote to your business and budget.'
     },
     {
       triggers: ['how long', 'timeline', 'time', 'days', '⏱', 'fast', 'quick'],
@@ -92,9 +92,9 @@
       answer: 'Yes — we serve <strong>all of Alberta</strong> and across Canada. We work remotely so location isn\'t a barrier.'
     },
     {
-      triggers: ['industry', 'industries', 'hvac', 'roofing', 'landscaping', 'plumbing', 'trades', '🏗'],
+      triggers: ['industry', 'industries', 'hvac', 'roofing', 'landscaping', 'plumbing', 'trades', '🏗', 'restaurant', 'salon', 'gym', 'dental', 'realtor', 'retail'],
       label: '🏗 Industries',
-      answer: 'We specialize in home service businesses: <strong>HVAC, roofing, landscaping, plumbing, electrical, painting, snow removal</strong>, and similar trades.'
+      answer: 'We work with <strong>ALL local businesses in Alberta</strong> — HVAC, roofing, landscaping, restaurants, salons, gyms, dental offices, realtors, retailers, auto shops, and more.'
     },
     {
       triggers: ['own', 'ownership', 'files', 'mine'],
@@ -114,12 +114,12 @@
     {
       triggers: ['seo', 'google', 'search', 'rank', 'find'],
       label: null,
-      answer: 'Every site we build is <strong>SEO-optimized for local search</strong>. We can also help with Google Business Profile ($99 one-time).'
+      answer: 'Every site we build is <strong>SEO-optimized for local search</strong>. We also offer Google Business Profile setup as an add-on — ask about it during your free audit.'
     },
     {
-      triggers: ['maintenance', 'hosting', 'monthly', 'update', '$79'],
+      triggers: ['maintenance', 'hosting', 'monthly', 'update'],
       label: null,
-      answer: '<strong>$79/month</strong> covers hosting, up to 2 content updates monthly, and direct access to us for any questions.'
+      answer: 'Our <strong>monthly maintenance plan</strong> covers hosting, up to 2 content updates per month, and direct access to us. Cancel anytime — no long-term contracts.'
     },
     {
       triggers: ['start', 'begin', 'get started', '📞', 'book', 'call'],
